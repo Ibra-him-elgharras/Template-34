@@ -7,5 +7,88 @@
     font-family: "Poppins", sans-serif;
 }
 
-                            /* body */
+                            /* 
+                            Color:  
+    background-1 : #dde1e7 
+    background-2 : 
+    color-1:        #595959
+    color-2:        #666666
 
+                            */
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: #dde1e7;
+}
+
+.content{
+    width: 330px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73,
+                 2px  2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.content .text{
+    font-size: 33px;
+    font-weight: 600;
+    color: #595959;
+    margin-bottom: 35px;
+}
+
+.content .field{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    color: #595959;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: #dde1e7;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus{
+    box-shadow: inset 1px 1px 2px #babecc,
+                inset -1px -1px 2px #ffffff73;
+}
+
+.field input:valid ~ label{
+    opacity: 0;
+}
+
+.field:nth-child(2){
+    margin-top: 20px;
+}
+
+.field i{
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: #595959;
+}
+
+.field label{
+    position: absolute;
+    top: 25%;
+    left: 45px;
+    pointer-events: none;
+    color: #666666  ;
+}
